@@ -1,0 +1,59 @@
+/* BOOTSTRAP 5 BREAKPOINTS */
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+#breakpoints::before {
+    content: "Extra Small mobile screens (<576px Portrait phones)";
+    font-family: arial;
+    color: #8B12FC;
+    font-size: 20px;
+}
+
+.p1 {
+    background-color: lightcoral;
+}
+
+.p2 {
+    background-color: lightblue;
+}
+
+.p3 {
+    background-color: lightgreen;
+}
+
+/* MEDIA QUERIES AT BOTTOM OF CSS */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #breakpoints::before {
+        content: "Small screens and up (>576px Landscape phones) - 'sm'";
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #breakpoints::before {
+        content: "Medium screens and up (>768px Tablets) - 'md'";
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #breakpoints::before {
+        content: "Large screens and up (>992px Desktops) - 'lg'";
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #breakpoints::before {
+        content: "Extra Large screens and up (>1200px Large Desktops) - 'xl'";
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    #breakpoints::before {
+        content: "Extra Extra Large screens and up (>1400px Larger Desktops) - 'xxl'";
+    }
+}
